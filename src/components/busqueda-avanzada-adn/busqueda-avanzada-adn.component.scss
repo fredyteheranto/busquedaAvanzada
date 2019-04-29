@@ -46,8 +46,8 @@
     .q-button {
         margin-left: 8px;
         padding: 0 8px;
-        background-color: #2399e5;
-        color: #fff;
+        background-color: #fff;
+        color: #505050;
         border: 1px solid #2399e5;
         transition: background-color 0.2s;
         &:disabled {
@@ -66,9 +66,8 @@
         display: inline-block;
         padding: 5px 8px;
         color: #555;
-        background-color: #fff;
-        background-image: none;
-        border: 1px solid #ccc;
+        background-color: #f7fbfe;
+        border: 1px solid #eaeef0;
         border-radius: 4px;
         box-sizing: border-box;
         width: auto;
@@ -94,15 +93,18 @@
         text-shadow: none;
         border: 1px solid rgba(0, 0, 0, 0.2);
         box-sizing: border-box;
-        color: #444;
+        color: #fff;
         &:hover {
             cursor: pointer;
             background-color: #2399e5;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+            line-height: 30px;
             color: #fff;
         }
     }
     .q-switch-label {
-        background-color: #254772;
+        background-color: #ffffff;
         padding: 0 8px;
         color: #fff;
     }
@@ -129,18 +131,18 @@
         }
     }
     .q-invalid-ruleset {
-        border: 1px solid rgba(179, 65, 93, 0.5) !important;
-        background: rgba(179, 65, 93, 0.1) !important;
+        border: 1px solid #ff3b3b !important;
+        background: rgba(255, 7, 7, 0.13) !important;
     }
     .q-empty-warning {
-        color: rgb(141, 37, 46);
+        color: #ff3b3b;
         text-align: center;
     }
     .q-ruleset {
-        border: 1px solid #CCC;
+        border: 1px solid rgba(65, 125, 201, 0.5294117647058824);
     }
     .q-rule {
-        border: 1px solid #CCC;
+        border: 1px solid rgba(65, 125, 201, 0.5294117647058824);
         background: white;
     }
     .q-transition {

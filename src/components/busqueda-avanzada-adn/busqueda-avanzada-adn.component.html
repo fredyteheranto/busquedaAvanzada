@@ -93,6 +93,7 @@
 
                         <ng-template #defaultField>
                             <div [ngClass]="getClassNames('fieldControlSize')">
+                                <label for="operador">CAMPO</label>
                                 <select [ngClass]="getClassNames('fieldControl')" [(ngModel)]="rule.field" (ngModelChange)="changeField($event, rule)" [disabled]="disabled">
                   <option *ngFor="let field of getFields(rule.entity)" [ngValue]="field.value">
                     {{field.name}}
@@ -107,6 +108,7 @@
 
                         <ng-template #defaultOperator>
                             <div [ngClass]="getClassNames('operatorControlSize')">
+                                <label for="condicion">CONDICIÓN</label>
                                 <select [ngClass]="getClassNames('operatorControl')" [(ngModel)]="rule.operator" (ngModelChange)="changeOperator(rule)" [disabled]="disabled">
                   <option *ngFor="let operator of getOperators(rule.field)" [ngValue]="operator">
                     {{operator}}
@@ -121,6 +123,7 @@
 
                         <ng-template #defaultInput>
                             <div [ngClass]="getClassNames('inputControlSize')" [ngSwitch]="getInputType(rule.field, rule.operator)">
+                                <label for="valor">VALOR</label>
                                 <input [ngClass]="getClassNames('inputControl')" [(ngModel)]="rule.value" (ngModelChange)="changeInput()" [disabled]="disabled" *ngSwitchCase="'string'" type="text">
                                 <input [ngClass]="getClassNames('inputControl')" [(ngModel)]="rule.value" (ngModelChange)="changeInput()" [disabled]="disabled" *ngSwitchCase="'number'" type="number">
                                 <input [ngClass]="getClassNames('inputControl')" [(ngModel)]="rule.value" (ngModelChange)="changeInput()" [disabled]="disabled" *ngSwitchCase="'date'" type="date">
