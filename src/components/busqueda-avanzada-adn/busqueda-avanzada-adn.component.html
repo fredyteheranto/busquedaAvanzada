@@ -92,7 +92,7 @@
                         </ng-container>
 
                         <ng-template #defaultField>
-                            <div [ngClass]="getClassNames('fieldControlSize')">
+                            <div [ngClass]="getClassNames('fieldControlSize')" style="width: 210px;">
                                 <label for="operador">CAMPO</label>
                                 <select [ngClass]="getClassNames('fieldControl')" [(ngModel)]="rule.field" (ngModelChange)="changeField($event, rule)" [disabled]="disabled">
                   <option *ngFor="let field of getFields(rule.entity)" [ngValue]="field.value">
@@ -107,7 +107,7 @@
                         </ng-container>
 
                         <ng-template #defaultOperator>
-                            <div [ngClass]="getClassNames('operatorControlSize')">
+                            <div [ngClass]="getClassNames('operatorControlSize')" style="width: 180px;">
                                 <label for="condicion">CONDICIÓN</label>
                                 <select [ngClass]="getClassNames('operatorControl')" [(ngModel)]="rule.operator" (ngModelChange)="changeOperator(rule)" [disabled]="disabled">
                   <option *ngFor="let operator of getOperators(rule.field)" [ngValue]="operator">
@@ -122,7 +122,7 @@
                         </ng-container>
 
                         <ng-template #defaultInput>
-                            <div [ngClass]="getClassNames('inputControlSize')" [ngSwitch]="getInputType(rule.field, rule.operator)">
+                            <div [ngClass]="getClassNames('inputControlSize')" [ngSwitch]="getInputType(rule.field, rule.operator)" style="width: 210px;">
                                 <label for="valor">VALOR</label>
                                 <input [ngClass]="getClassNames('inputControl')" [(ngModel)]="rule.value" (ngModelChange)="changeInput()" [disabled]="disabled" *ngSwitchCase="'string'" type="text">
                                 <input [ngClass]="getClassNames('inputControl')" [(ngModel)]="rule.value" (ngModelChange)="changeInput()" [disabled]="disabled" *ngSwitchCase="'number'" type="number">

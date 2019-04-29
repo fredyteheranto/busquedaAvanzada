@@ -42,6 +42,7 @@
     }
     .q-right-align {
         float: right;
+        margin-top: 15px;
     }
     .q-button {
         margin-left: 8px;
@@ -63,14 +64,23 @@
     .q-operator-control,
     .q-field-control,
     .q-entity-control {
+        // display: inline-block;
+        // padding: 5px 8px;
+        // color: #555;
+        // background-color: #f7fbfe;
+        // border: 1px solid #eaeef0;
+        // border-radius: 4px;
+        // box-sizing: border-box;
+        // width: auto;
         display: inline-block;
         padding: 5px 8px;
-        color: #555;
+        color: #254772;
         background-color: #f7fbfe;
         border: 1px solid #eaeef0;
         border-radius: 4px;
         box-sizing: border-box;
         width: auto;
+        font-size: 15px;
         &:disabled {
             border-color: transparent;
         }
@@ -93,7 +103,6 @@
         text-shadow: none;
         border: 1px solid rgba(0, 0, 0, 0.2);
         box-sizing: border-box;
-        color: #fff;
         &:hover {
             cursor: pointer;
             background-color: #2399e5;
@@ -106,7 +115,6 @@
     .q-switch-label {
         background-color: #ffffff;
         padding: 0 8px;
-        color: #fff;
     }
     .q-switch-radio {
         position: absolute;
@@ -116,9 +124,9 @@
         border: 0;
         overflow: hidden;
         &:checked+.q-switch-label {
-            border: 1px solid rgb(97, 158, 215);
-            background: white;
-            color: rgb(49, 118, 179);
+            border: 1px solid #619ed7;
+            background: #619ed7;
+            color: #fff;
         }
         &:disabled+.q-switch-label {
             display: none;
