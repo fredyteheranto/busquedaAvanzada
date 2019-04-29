@@ -1,4 +1,4 @@
-import { ValidationErrors } from './node_modules/@angular/forms';
+import { ValidationErrors } from '@angular/forms';
 
 export interface RuleSet {
   condition: string;

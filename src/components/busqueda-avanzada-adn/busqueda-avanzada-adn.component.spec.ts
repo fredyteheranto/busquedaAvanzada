@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from './node_modules/@angular/core/testing';
-import { CommonModule } from './node_modules/@angular/common';
-import { FormsModule, } from './node_modules/@angular/forms';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommonModule } from '@angular/common';
+import { FormsModule, } from '@angular/forms';
 import { BusquedaAvanzadaAdn30Component } from './busqueda-avanzada-adn.component';
 
 describe('BusquedaAvanzadaAdn30Component', () => {

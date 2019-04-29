@@ -5,7 +5,7 @@ import {
   NG_VALIDATORS,
   ValidationErrors,
   Validator
-} from './node_modules/@angular/forms';
+} from '@angular/forms';
 import { QueryOperatorDirective } from './query-operator.directive';
 import { QueryFieldDirective } from './query-field.directive';
 import { QueryEntityDirective } from './query-entity.directive';
@@ -35,7 +35,6 @@ import {
   EmptyWarningContext,
 } from './busqueda-avanzada-adn.interfaces';
 
-
 import {
   ChangeDetectorRef,
   Component,
@@ -51,7 +50,7 @@ import {
   TemplateRef,
   ViewChild,
   ElementRef
-} from './node_modules/@angular/core';
+} from '@angular/core';
 
 export const CONTROL_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,
@@ -546,12 +545,13 @@ export class BusquedaAvanzadaAdn30Component implements OnInit, OnChanges, Contro
       return;
     }
 
-    const entity: Entity = this.entities.find(e => e.value === entityValue);
+    const entity: Entity = this.entities.find((e) => e.value === entityValue);
     const defaultField: Field = this.getDefaultField(entity);
     data.rules[index] = {
       ...rule,
       field: defaultField.value
-    }
+    };
+
     if (defaultField) {
       this.changeField(defaultField.value, {
         ...rule,
