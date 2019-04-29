@@ -1,6 +1,6 @@
 {
     "name": "busqueda-avanzada-adn30",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Un generador de buzquedas Angular 7+ modernizado basado en jquery BusquedaAvanzadaAdn30 para ADN 3.0",
     "main": "./dist/index.umd.js",
     "module": "./dist/index.js",
