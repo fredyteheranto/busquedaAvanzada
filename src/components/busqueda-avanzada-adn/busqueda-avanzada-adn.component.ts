@@ -5,7 +5,7 @@ import {
   NG_VALIDATORS,
   ValidationErrors,
   Validator
-} from '@angular/forms';
+} from './node_modules/@angular/forms';
 import { QueryOperatorDirective } from './query-operator.directive';
 import { QueryFieldDirective } from './query-field.directive';
 import { QueryEntityDirective } from './query-entity.directive';
@@ -34,6 +34,8 @@ import {
   RuleSet,
   EmptyWarningContext,
 } from './busqueda-avanzada-adn.interfaces';
+
+
 import {
   ChangeDetectorRef,
   Component,
@@ -49,7 +51,7 @@ import {
   TemplateRef,
   ViewChild,
   ElementRef
-} from '@angular/core';
+} from './node_modules/@angular/core';
 
 export const CONTROL_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,

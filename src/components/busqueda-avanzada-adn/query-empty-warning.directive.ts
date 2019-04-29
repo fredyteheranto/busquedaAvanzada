@@ -1,4 +1,4 @@
-import { Directive, TemplateRef } from '@angular/core';
+import { Directive, TemplateRef } from './node_modules/@angular/core';
 
 @Directive({selector: '[queryEmptyWarning]'})
 export class QueryEmptyWarningDirective {

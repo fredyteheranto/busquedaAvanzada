@@ -1,4 +1,4 @@
-import { Directive, Input, TemplateRef } from '@angular/core';
+import { Directive, Input, TemplateRef } from './node_modules/@angular/core';
 
 @Directive({selector: '[queryInput]'})
 export class QueryInputDirective {
